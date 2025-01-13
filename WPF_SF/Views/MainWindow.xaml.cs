@@ -8,8 +8,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using WPF_SF.ViewModels;
 
-namespace WPF_SF
+namespace WPF_SF.Views
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -19,6 +20,7 @@ namespace WPF_SF
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext = new MainWindowViewModel();
         }
     }
 }
